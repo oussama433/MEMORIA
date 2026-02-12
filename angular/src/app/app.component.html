@@ -1,0 +1,19 @@
+<div class="layout">
+  <aside class="sidebar">
+    <h1>MEMORIA</h1>
+    <nav>
+      <a
+        *ngFor="let link of navLinks"
+        [routerLink]="link.path"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: link.path === '/' }"
+      >
+        {{ link.label }}
+      </a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
