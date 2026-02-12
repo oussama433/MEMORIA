@@ -9,3 +9,7 @@
 
   Run `npm run dev` to start the development server.
   
+
+## Angular version
+
+An Angular adaptation is available in [`angular/`](angular).
